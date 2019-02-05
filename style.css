@@ -1,0 +1,203 @@
+
+/* global */
+*{
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+  /*border: red 1px solid;*/
+}
+
+/*Nav bar*/
+
+body {
+  background-color:#E8E8E8;
+}
+nav {
+  background-color: #483D3F;
+  width: 100%;
+  height: 130px;
+  display: inline-flex;
+  justify-content: flex-end;
+  color: white;
+}
+.inline-flex{
+  display: inline-flex;
+  position: absolute;
+  z-index: 2;
+  filter:brightness(100%);
+
+}
+
+.nav-container-left {
+  align-items: center;
+  display:flex;
+  width:50%;
+}
+.unbrighten {
+  margin: 5px;
+}
+.icon-container {
+  display: flex;
+  margin: 42px 1px -35px 20px;
+}
+.nav-icon {
+display:flex;
+justify-content: center;
+margin-right:20px;
+margin-left:12px;
+margin-bottom: 12px;
+}
+
+.nav-container-right {
+  width:50%;
+  display: flex;
+  justify-content: flex-end;
+
+}
+.login-container {
+  display:inline-flex;
+  margin: 2px 10px 0px 0px;
+}
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  margin-right:50px;
+}
+
+.img-align {
+  margin-top:-3px;
+}
+/*Main*/
+h1 {
+  font-size:26px;
+  margin: 5px 10px;
+
+}
+h1.adoptable-text {
+   color: #0288D1;
+}
+main {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  padding-right: 11px;
+  padding-left: 11px;
+}
+.col-main:hover {
+  outline:4px solid #0288D1; 
+}
+.col-main{
+  background-color:white;
+  box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.3);
+  flex:0.25;
+  margin: 15px 10px 5px 10px;
+}
+.col-text{
+  margin: 26px;
+}
+.col-img{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20%;
+  width: 100%;
+  background-position: center;
+  filter: brightness(70%);
+}
+
+/* Card text */
+h3 { 
+  font-size: 15px;
+  color: #483D3F;
+ }
+ .col-date {
+  font-size:10.5px;
+  color: #A0A0A0;
+ }
+ .col-url {
+  font-size:11px;
+  padding:10px;
+  margin:12px 00px 9px 3px;
+  background-color:#F4F4F4;
+  border-radius: 2px;
+  padding: 5px 5px 5px 5px;
+  color: #545454;
+  width: 100%
+  }
+ h4 {
+  margin-top:15px;
+  font-size: 12px;
+  color: #757575;
+ }
+ .col-count {
+  font-size:24px;
+  color: #0288D1;
+ }
+ img {
+  margin-bottom:3px;
+ }
+ .view-text {
+  color: white;
+  font-size: 20px;
+  margin-left: 180px;
+  margin-top:5px;
+  text-shadow: 1px 1px black;
+ }
+
+/* Card photos */
+
+.dog-card-1 {
+   background-image: url(https://www.apartmentguide.com/blog/wp-content/uploads/2015/05/happydog-748x350.jpg);
+}
+.dog-card-2 {
+  background-image: url(https://images.pexels.com/photos/374898/pexels-photo-374898.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+.dog-card-3 {
+  background-image: url(https://images.pexels.com/photos/69372/pexels-photo-69372.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+.dog-card-4 {
+  background-image:url(https://images.pexels.com/photos/710927/pexels-photo-710927.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+}
+.dog-card-5 {
+ background-image: url(https://images.pexels.com/photos/1629781/pexels-photo-1629781.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+.dog-card-6 {
+ background-image: url(https://images.pexels.com/photos/160846/french-bulldog-summer-smile-joy-160846.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+.dog-card-7 {
+ background-image: url(https://images.pexels.com/photos/776078/pexels-photo-776078.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+.dog-card-8 {
+ background-image: url(https://images.pexels.com/photos/825949/pexels-photo-825949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+
+/* media queries */
+@media only screen and (max-width: 1300px) {
+.view-text {
+  
+  margin-left: 150px;
+}
+@media only screen and (max-width: 1200px) {
+main {
+  width: 70%;
+  align-content:space-around;
+  display: flex;
+  justify-content: space-around;
+  }
+.view-text {
+  margin-left: 150px;
+}
+}
+@media only screen and (max-width: 525px) {
+
+nav {
+  height:200px;
+}
+.icon-container{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+}
+
